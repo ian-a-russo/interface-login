@@ -1,0 +1,82 @@
+@import "./variables.scss";
+@import "./functions.scss";
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: $background;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 500px;
+    background-color: $light;
+    padding: 20px;
+    border-radius: 10px;
+    @include sombra();
+    @include centralizar();
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+label, input {
+    @include texto();
+}
+
+#titulo {
+    @include titulo();
+    text-align: center;
+}
+
+.sem-usuario, #cadastrar {
+    @include buttonLink();
+    margin-top: 10px;
+}
+
+input {
+    @include caixaTexto();
+    margin-bottom: 20px;
+    width: 200;
+    height: 30;
+}
+
+.confirmar-login {    
+    @include centralizar();
+    margin-top: 10px;
+}
+
+#botao-enviar {
+    @include botao();
+    margin-top: 20px;
+}
+
+#confirmar-novo-usuario {
+    @include botao();
+    margin-top: 5px;
+}
+
+.dialog-cadastrar {
+    @include bordaRedonda();   
+    @include sombra();
+    border: 0px;
+    width: 300px;
+    padding: 20px;
+    background-color: $light;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#fechar-dialog {
+    @include fecharDialog();
+}
+

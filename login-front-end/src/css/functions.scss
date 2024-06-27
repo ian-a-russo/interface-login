@@ -1,0 +1,96 @@
+@mixin caixaTexto {
+    color: $dark;
+    font-size: 16px;
+    box-shadow: 0 2px 4px $shadow;
+    border: 1px solid $dark;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    &:focus {
+        box-shadow: 0 4px 8px $shadow;
+        transform: scale(1.02);
+    }
+}
+
+@mixin centralizar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin buttonLink {
+    background-color: transparent;
+    color: $link;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    &:hover {
+        color: $hoverLink;
+    }
+    &:active {
+        color: $activeLink;
+    }
+}
+
+@mixin pointer {
+    cursor: pointer;
+}
+
+@mixin titulo {
+    font-size: 36px;
+    color: $dark;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+@mixin texto {
+    font-size: 16px;
+    color: $dark;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@mixin sombra {
+    box-shadow: 0 4px 8px $shadow;
+}
+
+@mixin bordaRedonda {
+    border-radius: 8px;
+}
+
+@mixin botao {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: $light;
+    background-color: $info;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    &:hover {
+        background-color: $hoverInfo;
+        transform: scale(1.05);
+    }
+    &:active {
+        background-color: $info;
+        transform: scale(0.95);
+    }
+}
+
+@mixin fecharDialog {
+    color: red;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    border: 0px;
+    &:hover {
+        color: rgb(163, 7, 7);
+        transform: scale(1.05);
+    }
+    &:active {
+        color: rgb(117, 7, 7);
+        transform: scale(0.95);
+    }
+}

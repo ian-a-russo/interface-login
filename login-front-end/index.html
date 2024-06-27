@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validação Login</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 id="titulo">Login</h1>
+
+        <div>
+          <label for="nome-usuario">Insira seu usuário:</label><br />
+          <input type="text" id="nome-usuario" />
+        </div>
+
+        <div>
+          <label for="senha-usuario">Insira sua senha:</label><br />
+          <input type="password" id="senha-usuario" />
+        </div>
+
+        <div class="confirmar-login">
+          <button type="button" id="botao-enviar">Confirmar</button>
+        </div>
+
+        <div class="sem-usuario">
+          <button type="button" id="cadastrar">Não possui cadastro?</button>
+        </div>
+      </div>
+
+      <div class="novo-cadastro">
+        <dialog class="dialog-cadastrar" id="cadastrar-novo-usuario">
+          <h1 id="titulo">Novo usuário:</h1>
+          <button id="fechar-dialog">×</button>
+          <div class="usuario">
+            <label for="novo-usuario">Insira seu novo usuário:</label><br />
+            <input type="email" id="novo-usuario" />
+          </div>
+
+          <div class="senha">
+            <label for="nova-senha">Insira sua senha:</label><br />
+            <input type="password" id="nova-senha" />
+          </div>
+
+          <div class="senha-novamente">
+            <label for="repete-senha">Confirme sua senha:</label><br />
+            <input type="password" id="repete-senha" />
+          </div>
+
+          <div class="confirmar-login">
+            <button type="button" id="confirmar-novo-usuario">Confirmar</button>
+          </div>
+        </dialog>
+      </div>
+    </div>
+    <script src="./dist/bundle.js"></script>
+  </body>
+</html>

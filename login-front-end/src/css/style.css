@@ -1,0 +1,152 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #e0e0e0;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  max-width: 500px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+label, input {
+  font-size: 16px;
+  color: #424242;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#titulo {
+  font-size: 36px;
+  color: #424242;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sem-usuario, #cadastrar {
+  background-color: transparent;
+  color: #03a9f4;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-top: 10px;
+}
+.sem-usuario:hover, #cadastrar:hover {
+  color: #0288d1;
+}
+.sem-usuario:active, #cadastrar:active {
+  color: #0277bd;
+}
+
+input {
+  color: #424242;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid #424242;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  margin-bottom: 20px;
+  width: 200;
+  height: 30;
+}
+input:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.confirmar-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#botao-enviar {
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #f5f5f5;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+#botao-enviar:hover {
+  background-color: #1976d2;
+  transform: scale(1.05);
+}
+#botao-enviar:active {
+  background-color: #2196f3;
+  transform: scale(0.95);
+}
+
+#confirmar-novo-usuario {
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #f5f5f5;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 5px;
+}
+#confirmar-novo-usuario:hover {
+  background-color: #1976d2;
+  transform: scale(1.05);
+}
+#confirmar-novo-usuario:active {
+  background-color: #2196f3;
+  transform: scale(0.95);
+}
+
+.dialog-cadastrar {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 0px;
+  width: 300px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#fechar-dialog {
+  color: red;
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: transparent;
+  border: 0px;
+}
+#fechar-dialog:hover {
+  color: rgb(163, 7, 7);
+  transform: scale(1.05);
+}
+#fechar-dialog:active {
+  color: rgb(117, 7, 7);
+  transform: scale(0.95);
+}/*# sourceMappingURL=style.css.map */
