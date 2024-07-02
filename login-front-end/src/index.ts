@@ -13,17 +13,19 @@ const dialogCadastrar = buscarModal("#cadastrar-novo-usuario");
 const confirmarLogin = buscarSeletor("#botao-enviar");
 const confirmarNovoUsuario = buscarSeletor("#confirmar-novo-usuario");
 const fecharDialog = buscarSeletor("#fechar-dialog");
-
+const carregamento = buscarModal("#carregamento");
 
 confirmarLogin?.addEventListener("click", async () => {
   let usuario = usuarioLogin.value;
   let senha = senhaLogin.value;  
   const users = await getUser(usuario, senha);
   if(users == true) {
-    alert("Usuário encontrado!")
+    carregamento.style.display = 'flex';
     usuario = usuarioLogin.value = "";
-    senha = senhaLogin.value = "";  
-    window.location.href = 'https://www.mercadolivre.com.br/';
+    senha = senhaLogin.value = "";      
+        window.location.href = 'https://www.mercadolivre.com.br/';
+
+
     return;
   }
   return alert("Usuário e/ou senha incorreta!");
